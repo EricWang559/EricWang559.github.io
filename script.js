@@ -13,6 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(toggle);
 
     toggle.addEventListener("click", () => {
-        document.body.classList.toggle("light-mode");
+        const themeStyle = document.getElementById("theme-style");
+        
+        if (themeStyle.getAttribute("href") === "tnstyle.css") {
+            themeStyle.setAttribute("href", "style.css"); // Switch to light theme
+        } else {
+            themeStyle.setAttribute("href", "tnstyle.css"); // Switch back to dark theme
+        }
     });
 });
