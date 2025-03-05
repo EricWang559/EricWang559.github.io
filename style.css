@@ -20,7 +20,7 @@ header h1 {
 
 /* Navigation */
 nav {
-    background: #010344;
+    background: #1e1e1e;
     padding: 10px;
     text-align: center;
 }
@@ -58,6 +58,7 @@ section {
 footer {
     text-align: center;
     padding: 20px;
-    background: #ffffff;
+    background: #121212;
     margin-top: 20px;
+    color: #ffffff
 }
