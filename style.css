@@ -1,6 +1,6 @@
 /* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Courier, monospace;
     background-color: #121212;
     color: #ffffff;
     margin: 0;
@@ -9,7 +9,7 @@ body {
 
 /* Header */
 header {
-    background: #1e1e1e;
+    background: #002b80;
     padding: 20px;
     text-align: center;
 }
@@ -42,7 +42,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #24283b;
+    color: #bac0df;
 }
 
 /* Sections */

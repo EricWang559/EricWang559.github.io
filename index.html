@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric Wang - Portfolio</title>
-    <link id="theme-style" rel="stylesheet" href="style.css"> <!-- Default theme is tnstyle.css -->
+    <link id="theme-style" rel="stylesheet" href="style.css"> <!-- Default to light theme -->
 </head>
 <body>
     <header>
         <h1>Eric Wang</h1>
         <p>Student | Software Developer | Musician</p>
-        <p>Version 1.2.0</p>
+        <p>Version 1.2.1</p>
     </header>
 
     <nav>
@@ -24,11 +24,15 @@
         </ul>
     </nav>
 
-    <section id="about">
+    <a href="page1.html" class="button">Page 1</a>
+    <a href="page2.html" class="button">Page 2</a>
+
+
+    <section id="about-me">
         <h2>About Me</h2>
-        <p>Hi, I'm Eric! I'm a 15 year old junior from Texas.</p>
+        <p>Hi, I'm Eric! I'm a 15-year-old junior from Texas.</p>
         <p>I'm passionate about coding, violin, and math.</p>
-        <p>I'm also fluent in English and Mandarin Chinese.</p>
+        <p>I'm fluent in English and Mandarin Chinese.</p>
     </section>
 
     <section id="awards">
@@ -75,7 +79,6 @@
 
     <section id="skills">
         <h2>Skills</h2>
-        
         <h3>Coding Languages</h3>
         <ul>
             <li>Python</li>
@@ -90,7 +93,7 @@
         </ul>
     </section>
 
-    <section id="Education">
+    <section id="education">
         <h3>Education</h3>
         <h4>2023</h4>
         <ul>
@@ -116,7 +119,6 @@
 
     <section id="roles">
         <h2>Positions & Roles</h2>
-
         <h3>Competitions</h3>
         <ul>
             <li>UIL Number Sense, Calculator, Math, Science, Accounting, Computer Science</li>
@@ -151,5 +153,21 @@
         <p>© 2025 Eric Wang. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementsByClassName("tablink")[0].click();
+    </script>
 </body>
 </html>

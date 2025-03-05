@@ -8,18 +8,18 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.style.background = "#ff9800";
     toggle.style.color = "#fff";
     toggle.style.border = "none";
+    toggle.style.borderRadius = "5px";
     toggle.style.cursor = "pointer";
+    toggle.style.boxShadow = "2px 2px 10px rgba(0, 0, 0, 0.2)";
 
     document.body.appendChild(toggle);
 
     toggle.addEventListener("click", () => {
         const themeStyle = document.getElementById("theme-style");
-        
-        if (themeStyle.getAttribute("href") === "tnstyle.css") {
-            themeStyle.setAttribute("href", "style.css"); //Switch to light theme
-        } 
-        else {
-            themeStyle.setAttribute("href", "tnstyle.css"); //Switch back to dark theme
+        if (themeStyle.getAttribute("href") === "style.css") {
+            themeStyle.setAttribute("href", "tnstyle.css"); // Switch to dark theme
+        } else {
+            themeStyle.setAttribute("href", "style.css"); // Switch to light theme
         }
     });
 });
