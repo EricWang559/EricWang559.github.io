@@ -1,26 +1,27 @@
 /* General Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #1f2335; /* Deep dark background */
+    color: #ffffff; /* Light text color for contrast */
     margin: 0;
     padding: 0;
 }
 
 /* Header */
 header {
-    background: #1e1e1e;
+    background: #24283b; /* Dark purple background */
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+    color: #ffffff; /* Pinkish color for the header */
 }
 
 /* Navigation */
 nav {
-    background: #745454;
+    background: #1f2335; /* Darker blue-gray */
     padding: 10px;
     text-align: center;
 }
@@ -36,13 +37,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff; /* Light text color */
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #ff9800;
+    color: #292e42; /* Pinkish color on hover */
 }
 
 /* Sections */
@@ -50,7 +51,7 @@ section {
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
-    background: #1e1e1e;
+    background: #24283b; /* Slightly lighter dark background for the sections */
     border-radius: 10px;
 }
 
@@ -58,6 +59,7 @@ section {
 footer {
     text-align: center;
     padding: 20px;
-    background: #333;
+    background: #1f2335; /* Dark purple footer */
     margin-top: 20px;
+    color: #ffffff; /* Light text for footer */
 }
