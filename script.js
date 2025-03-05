@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const toggle = document.createElement("button");
-    toggle.textContent = "Toggle Dark Mode";
+    toggle.textContent = "Change Theme";
     toggle.style.position = "fixed";
     toggle.style.top = "10px";
     toggle.style.right = "10px";
@@ -16,9 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const themeStyle = document.getElementById("theme-style");
         
         if (themeStyle.getAttribute("href") === "tnstyle.css") {
-            themeStyle.setAttribute("href", "style.css"); // Switch to light theme
-        } else {
-            themeStyle.setAttribute("href", "tnstyle.css"); // Switch back to dark theme
+            themeStyle.setAttribute("href", "style.css"); //Switch to light theme
+        } 
+        else {
+            themeStyle.setAttribute("href", "tnstyle.css"); //Switch back to dark theme
         }
     });
 });

@@ -20,7 +20,7 @@ header h1 {
 
 /* Navigation */
 nav {
-    background: #745454;
+    background: #24283b;
     padding: 10px;
     text-align: center;
 }
@@ -42,7 +42,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff9800;
+    color: #24283b;
 }
 
 /* Sections */
@@ -58,6 +58,6 @@ section {
 footer {
     text-align: center;
     padding: 20px;
-    background: #333;
+    background: #ffffff;
     margin-top: 20px;
 }
