@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eric Wang - Page 2</title>
-    <link id="theme-style" rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eric Wang - Page 2</title>
+  <link rel="icon" type="image/png" href="IMG_1417.png">
+  <link id="theme-style" rel="stylesheet" href="style.css">
+  <style>
+    /* Inline styles for game layout */
+    #snakeCanvas {
+      border: 1px solid #333;
+      background-color: #000;
+      display: block;
+      margin: 10px auto;
+    }
+    #score {
+      text-align: center;
+      font-size: 1.5rem;
+      color: #333;
+    }
+    #startButton {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Eric Wang</h1>
-        <p>Version 1.2.3</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html" class="nav-button">Home</a></li>
-            <li><a href="page1.html" class="nav-button">Page 1</a></li>
-            <li><a href="page2.html" class="nav-button">Page 2</a></li> 
-        </ul>
-    </nav>
+  <header>
+    <h1>Eric Wang</h1>
+    <p>Version 1.2.4</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html" class="nav-button">Home</a></li>
+      <li><a href="page1.html" class="nav-button">Page 1</a></li>
+      <li><a href="page2.html" class="nav-button">Page 2</a></li>
+    </ul>
+  </nav>
+  
+  <section id="game">
+    <h2>Snake Game</h2>
+    <p>Use the arrow keys to control the snake. Eat the red apple to grow and increase your score. Avoid running into yourself!</p>
+    <button id="startButton">Start Game</button>
+    <canvas id="snakeCanvas" width="400" height="400"></canvas>
+    <p id="score">Score: 0</p>
+  </section>
+ 
+  <footer>
+    <p>© 2025 Eric Wang. All rights reserved.</p>
+  </footer>
+  
+  <script src="page1script.js"></script>
+</body>
+</html>
