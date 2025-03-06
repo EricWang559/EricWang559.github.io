@@ -102,6 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Listen for arrow key presses using modern `e.key`
     document.addEventListener("keydown", (e) => {
+      //console.log("Key pressed:", e.key); // Log the key pressed
       switch (e.key) {
         case "ArrowLeft":
           if (snake.dx === 0) {
