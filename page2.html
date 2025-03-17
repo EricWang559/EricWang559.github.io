@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="IMG_1417.png">
   <link id="theme-style" rel="stylesheet" href="style.css">
   <style>
-    /* Inline styles for game layout */
+    /* inline styles */
     #snakeCanvas {
       border: 1px solid #333;
       background-color: #000;
@@ -19,19 +19,17 @@
       font-size: 1.5rem;
       color: #333;
     }
-    #startButton {
-      display: block;
-      margin: 10px auto;
-      padding: 10px 20px;
-      font-size: 1rem;
-      cursor: pointer;
+    /* hide these screens by default */
+    #startScreen, #endScreen {
+      display: none;
+      text-align: center;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Eric Wang</h1>
-    <p>Version 1.2.4</p>
+    <p>Version 1.2.5</p>
   </header>
   
   <nav>
@@ -39,21 +37,40 @@
       <li><a href="index.html" class="nav-button">Home</a></li>
       <li><a href="page1.html" class="nav-button">Page 1</a></li>
       <li><a href="page2.html" class="nav-button">Page 2</a></li>
+      <li><a href="projectspage.html" class="nav-button">Projects</a></li>
     </ul>
   </nav>
-  
-  <section id="game">
+
+  <!-- start screen -->
+  <div id="startScreen">
+    <h2>snake game</h2>
+    <label>player color <input type="color" id="playerColor" value="#008000"></label>
+    <br><br>
+    <label>speed 1 to 10 <input type="number" id="gameSpeed" min="1" max="10" value="4"></label>
+    <br><br>
+    <button id="startButton">start game</button>
+  </div>
+
+  <!-- main game section -->
+  <section id="gameScreen" style="display:none">
     <h2>Snake Game</h2>
-    <p>Use the arrow keys to control the snake. Eat the red apple to grow and increase your score. Avoid running into yourself!</p>
-    <button id="startButton">Start Game</button>
+    <p>Use arrow keys to control the snake. Eat red apples to grow. Don't hit walls or yourself!</p>
     <canvas id="snakeCanvas" width="400" height="400"></canvas>
-    <p id="score">Score: 0</p>
+    <p id="score">score 0</p>
   </section>
+
+  <!-- end screen -->
+  <div id="endScreen">
+    <h2>game over</h2>
+    <p id="finalScore"></p>
+    <button id="playAgainButton">play again</button>
+  </div>
  
   <footer>
     <p>© 2025 Eric Wang. All rights reserved.</p>
   </footer>
-  
+
+  <!-- separate js file -->
   <script src="page2script.js"></script>
 </body>
 </html>
