@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric Wang - Page 1</title>
-    <link rel="icon" type="image/png" href="IMG_1417.png">
-    <link id="theme-style" rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/IMG_1417.png">
+    <link id="theme-style" rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <!-- load header and navigation  -->
@@ -14,7 +14,8 @@
         fetch('header.html')
             .then(response => response.text())
             .then(data => {
-                document.getElementById('header-container').innerHTML = data;
+                const container = document.getElementById('header-container');
+                container.innerHTML = data;
             })
             .catch(error => console.error('Error loading header:', error));
     </script>
@@ -56,7 +57,7 @@
                 </ul>
                 <li><strong>Block Games</strong> - A collection of common 2d block games</li>
                 <ul>
-                    <li><a href="https://github.com/EricWang559/blockgames">GitHub Repo</a></li>
+                    <li><a href="https://github.com/EricWang559/blockgame">GitHub Repo</a></li>
                 </ul>
             </ul>
     <section id="Java Projects">

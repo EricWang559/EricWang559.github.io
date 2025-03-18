@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eric Wang - Page 2</title>
-  <link rel="icon" type="image/png" href="IMG_1417.png">
-  <link id="theme-style" rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/IMG_1417.png">
+  <link id="theme-style" rel="stylesheet" href="styles/style.css">
   <style>
     /* inline styles */
     #snakeCanvas {
@@ -30,12 +30,13 @@
   <!-- load header and navigation  -->
   <div id="header-container"></div>
   <script>
-      fetch('header.html')
-          .then(response => response.text())
-          .then(data => {
-              document.getElementById('header-container').innerHTML = data;
-          })
-          .catch(error => console.error('Error loading header:', error));
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            const container = document.getElementById('header-container');
+            container.innerHTML = data;
+        })
+      .catch(error => console.error('Error loading header:', error));
   </script>
 
   <!-- start screen -->
