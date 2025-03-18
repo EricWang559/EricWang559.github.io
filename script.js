@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener("click", () => {
         const themeStyle = document.getElementById("theme-style");
         if (themeStyle.getAttribute("href") === "style.css") {
-            themeStyle.setAttribute("href", "tnstyle.css"); // Switch to dark theme
+            themeStyle.setAttribute("href", "tnstyle2.css"); // Switch to dark theme
         } else {
             themeStyle.setAttribute("href", "style.css"); // Switch to light theme
         }
