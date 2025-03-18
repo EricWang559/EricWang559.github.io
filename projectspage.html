@@ -8,37 +8,112 @@
     <link id="theme-style" rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Eric Wang</h1>
-        <p>Version 1.2.5</p>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="index.html" class="nav-button">Home</a></li>
-            <li><a href="page1.html" class="nav-button">Page 1</a></li>
-            <li><a href="page2.html" class="nav-button">Page 2</a></li>
-            <li><a href="projectspage.html" class="nav-button">Projects</a></li>
-        </ul>
-    </nav>
+    <!-- load header and navigation  -->
+    <div id="header-container"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
     
     <h1>Projects</h1>
+    <p>Welcome to my projects page! This page showcases (most of) the projects I've worked on. Many of these were for courses that I took throughout high school; I took Computer Science 1, 2, and am currently taking Practicum in CS. Feel free to explore these projects!</p>
+    
     <section id="Python Projects">
         <h2>Python Projects</h2>
-        <ul>
-            <li><strong>Rubik's Cube Simulation</strong> - A 3d simulation of a Rubik's cube in Python</li>
+        <p>Python is my main language, as I've been learning this language for a long time, although I took a break from this language when taking CS1 and CS2 and focused on Java. Here are only a few of my projects, as I cannot find many of the files and links from working on school computers and other devices.</p>
+        <h3>2021</h3>
             <ul>
+                <li><strong>Snake</strong> - snake in python using the Turtle package</li>
+                <ul>
+                    <li>I made this so long ago on a different computer so I don't have the files/links</li>
+                </ul>
+            </ul>
+        <h3>2024</h3>
+            <ul>
+                <li><strong>Pygame intro</strong> - runner game with jumping and added features</li>
+                <ul>
+                    <li><a href="https://github.com/EricWang559/pygame-intro">GitHub Repo</a></li>
+                </ul>
+            </ul>
+        <h3>2025</h3>
+            <ul>
+                <li><strong>Rubik's Cube Simulation</strong> - A 3d simulation of a Rubik's cube in Python</li>
+                <ul>
                 <li><a href="https://github.com/EricWang559/cube3d">GitHub Repo</a></li>
+                </ul>
+                <li><strong>Ball Bounce</strong> - Physics Simulations of Gravity, Magnetism, and Electric fields</li>
+                <ul>
+                    <li><a href="https://github.com/EricWang559/ballbounce">GitHub Repo</a></li>
+                </ul>
+                <li><strong>Block Games</strong> - A collection of common 2d block games</li>
+                <ul>
+                    <li><a href="https://github.com/EricWang559/blockgames">GitHub Repo</a></li>
+                </ul>
             </ul>
-            <li><strong>Ball Bounce</strong> - Physics Simulations of Gravity, Magnetism, and Electric fields</li>
+    <section id="Java Projects">
+        <h2>Java Projects</h2>
+        <p>Java was the language taught to me in school for both CS1 and CS2, as well as the coding language tested for AP CSA.</p>
+        <h3>2022</h3>
             <ul>
-                <li><a href="https://github.com/EricWang559/ballbounce">GitHub Repo</a></li>
+                <li><strong>Hangman</strong> - hangman project for Computer Science 1</li>
+                <ul>
+                    <li><a href="https://github.com/EricWang559/Hangman">GitHub Repo</a></li>
+                </ul>
             </ul>
-            <li><strong>Block Games</strong> - A collection of common 2d block games, for experimenting</li>
+        <h3>2023</h3>
             <ul>
-                <li><a href="https://github.com/EricWang559/blockgames">GitHub Repo</a></li>
+                <li><strong>Snake Game</strong> - snake game</li>
+                <ul>
+                    <li><a href="https://github.com/EricWang559/SnakeGame">GitHub Repo</a></li>
+                </ul>
+                <li><strong>Pong Game</strong> - pong but with object generation</li>
+                <ul>
+                    <li><a href="https://drive.google.com/drive/folders/1S4xHkHHeU34yr4x43S94p2DwO8x_gIH_?usp=sharing">Google Drive Link</a></li>
+                </ul>
+                <li><strong>Blackjack</strong> - a simulation of the gambling game Blackjack</li>
+                <ul>
+                    <li><a href="https://github.com/EricWang559/BlackJack">GitHub Repo</a></li>
+                </ul>
+                <li><strong>2048</strong> - sliding blocks game of 2048</li>
+                <ul>
+                    <li><a href="https://github.com/EricWang559/2048">GitHub Repo</a></li>
+                </ul>
             </ul>
-        </ul>
+        <h3>2024</h3>
+        <li><strong>Calculator</strong> - Java GUI Calculator</li>
+                <ul>
+                    <li><a href="https://github.com/EricWang03/CalculatorProject">GitHub Repo</a></li>
+                </ul>
+                <li><strong>Inheritance Project</strong> - Inheritance Final Project for Computer Science 2</li>
+                <ul>
+                    <li><a href="https://github.com/EricWang559/java-inheritance-project">GitHub Repo</a></li>
+                </ul>
+        
+    </section>
+    <section id="C++ Projects">
+        <h2>C++ Projects</h2>
+        <p>In Practicum, I've started to learn C++, as it is very efficient and also very useful, especially for competitive coding. I'm trying to get more familiar with C++ and potentially switch to this language as my main.</p>
+        <h3>2025</h3>
+            <ul>
+                <li><strong>Sorting Algorithms</strong> - A collection of sorting algorithms in C++</li>
+                <ul>
+                    <li><a href="https://github.com/EricWang559/SortingAlgorithms">GitHub Repo</a></li>
+                </ul>
+            </ul>
+    </section>
+    <section id="Other Projects">
+        <h2>Other Projects</h2>
+        <p>These projects aren't in any one language, but are some miscellaneous things I've worked on over the years.</p>
+        <h3>2024</h3>
+        <ul>
+            <li><strong>Godot Project</strong> - An introduction project of Godot.</li>
+            <ul>
+                <li><a href="https://github.com/TheCalmPerson/Godot1-Gm">GitHub Repo</a></li>
+    </section>
 
     </section>
    

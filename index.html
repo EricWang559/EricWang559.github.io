@@ -8,19 +8,16 @@
     <link id="theme-style" rel="stylesheet" href="style.css"> <!-- Default to light theme -->
 </head>
 <body>
-    <header>
-        <h1>Eric Wang</h1>
-        <p>Version 1.2.4</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html" class="nav-button">Home</a></li>
-            <li><a href="page1.html" class="nav-button">Page 1</a></li>
-            <li><a href="page2.html" class="nav-button">Page 2</a></li> <!-- New Page 2 link -->
-            <li><a href="projectspage.html" class="nav-button">Projects</a></li>
-        </ul>
-    </nav>
+    <!-- load header and navigation  -->
+    <div id="header-container"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
     
 
 
@@ -37,28 +34,42 @@
         <h3>Research & Summer Programs</h3>
         <h4>2022</h4>
         <ul>
-            <li><strong>Texas A&M STEM Research Camp</strong> - Conducted STEM Research</li>
+            <li><strong>Texas A&M STEM Research Camp</strong> - Conducted STEM Research.</li>
         </ul>
         <h4>2023</h4>
         <ul>
             <li><strong>Yale SIG Camp</strong> - Neuroscience and Regenerative Medicine.</li>
         </ul>
+        <h4>2025</h4>
+        <ul>
+            <li><strong>UT Austin Research Program</strong> - Research in AI and Machine Learning.</li>
+        </ul>
 
         <h3>Competitions & Recognitions</h3>
+        <h4>2023</h4>
+        <ul>
+            <li>GARSEF - Material Science</li>
+            <li>Region Full Orchestra</li>
+
+        </ul>
         <h4>2024</h4>
         <ul>
             <li>SME Digital Manufacturing Award</li>
             <li>NIH BRAIN NeuroAI Honorary Mention</li>
             <li>AMC12 - Distinction</li>
             <li>USACO Bronze</li>
+            <li>Region Full Orchestra</li>
         </ul>
 
         <h4>2025</h4>
         <ul>
             <li>2nd Place GARSEF - Material Science</li>
-            <li>AIME</li>
+            <li> TXSEF State Qualifier </li>
+            <li>AIME National Qualifier</li>
             <li>BPA National Alternate (Python)</li>
             <li>TEAMS National Qualifier</li>
+            <li>USACO Silver</li>
+            <li>Region Full Orchestra</li>
         </ul>
     </section>
 

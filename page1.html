@@ -8,20 +8,16 @@
     <link id="theme-style" rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Eric Wang</h1>
-        <p>Version 1.2.5</p>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="index.html" class="nav-button">Home</a></li>
-            <li><a href="page1.html" class="nav-button">Page 1</a></li>
-            <li><a href="page2.html" class="nav-button">Page 2</a></li> <!-- New Page 2 link -->
-            <li><a href="projectspage.html" class="nav-button">Projects</a></li>
-
-        </ul>
-    </nav>
+    <!-- load header and navigation  -->
+    <div id="header-container"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
     
     <section id="game">
         <h2>Reaction Time Game</h2>
