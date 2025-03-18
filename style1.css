@@ -10,7 +10,7 @@ body {
 
 /* Header */
 header {
-    background: #b41313;
+    background: #c4baba;
     padding: 20px;
     text-align: center;
 }
@@ -21,7 +21,7 @@ header h1 {
 
 /* Navigation */
 nav {
-    background: #1e1e1e;
+    background: #847c7c;
     padding: 10px;
     text-align: center;
 }
