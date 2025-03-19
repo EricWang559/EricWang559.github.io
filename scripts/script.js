@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.style.top = "10px"
     toggle.style.right = "10px"
     toggle.style.padding = "10px"
-    toggle.style.background = "#002945" // btn col
+    toggle.style.background = "#002945"
     toggle.style.color = "#ffffff"
     toggle.style.border = "none"
     toggle.style.borderRadius = "5px"
@@ -42,18 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
     if (linkElem) {
       linkElem.setAttribute("href", themes[currentThemeIndex])
     } else {
-      console.error("no 'theme-style' elem")
+      console.error("no 'theme-style' element found")
     }
     themeNameDisplay.textContent = themeNames[currentThemeIndex]
   
+    // on button click, cycle theme
     toggle.addEventListener("click", () => {
-      // cycle theme
       currentThemeIndex = (currentThemeIndex + 1) % themes.length
       if (linkElem) {
         linkElem.setAttribute("href", themes[currentThemeIndex])
       }
       localStorage.setItem("themeIndex", currentThemeIndex)
-      // update disp
       themeNameDisplay.textContent = themeNames[currentThemeIndex]
     })
   })
