@@ -14,8 +14,7 @@
         fetch('header.html')
             .then(response => response.text())
             .then(data => {
-                const container = document.getElementById('header-container')
-                container.innerHTML = data
+                document.getElementById('header-container').innerHTML = data;
                 // show container after header loads
                 // container.style.display = 'block'
             })
