@@ -31,12 +31,14 @@
   <div id="header-container"></div>
   <script>
     fetch('header.html')
-        .then(response => response.text())
-        .then(data => {
-            const container = document.getElementById('header-container');
-            container.innerHTML = data;
-        })
-      .catch(error => console.error('Error loading header:', error));
+    .then(response => response.text())
+    .then(data => {
+        const container = document.getElementById('header-container')
+        container.innerHTML = data
+        // show container after header loads
+        // container.style.display = 'block'
+    })
+    .catch(error => console.error('error loading header:', error))
   </script>
 
   <!-- start screen -->
