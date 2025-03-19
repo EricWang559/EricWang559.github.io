@@ -1,65 +1,73 @@
-/* General Styling */
-body {
+:root {
+    --link-color: #7aa2f7; /* light blue accent */
+    --link-hover-color: #2ac3de; /* neon cyan */
+  }
+  
+  /* General Styling */
+  body {
     font-family: Courier, monospace;
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #1a1b26; /* dark background */
+    color: #c0caf5; /* light text */
     margin: 0;
     padding: 0;
-    min-height: 100vh; /* Full height of the viewport */
-}
-
-/* Header */
-header {
-    background: #c4baba;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    background: #161821; /* slightly darker */
     padding: 20px;
     text-align: center;
-}
-
-header h1 {
+  }
+  
+  header h1 {
     margin: 0;
-}
-
-/* Navigation */
-nav {
-    background: #847c7c;
+    color: #c0caf5; /* light text */
+  }
+  
+  /* Navigation */
+  nav {
+    background: #1a1b26;
     padding: 10px;
     text-align: center;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     list-style: none;
     padding: 0;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     display: inline;
     margin: 0 15px;
-}
-
-nav ul li a {
-    color: #ffffff;
+  }
+  
+  /* nav links using variables */
+  nav ul li a {
+    color: var(--link-color);
     text-decoration: none;
     font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #d4d8ee;
-}
-
-/* Sections */
-section {
+  }
+  
+  nav ul li a:hover {
+    color: var(--link-hover-color);
+  }
+  
+  /* Sections */
+  section {
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
-    background: #1e1e1e;
+    background: #161821;
     border-radius: 10px;
-}
-
-/* Footer */
-footer {
+  }
+  
+  /* Footer */
+  footer {
     text-align: center;
     padding: 20px;
-    background: #121212;
+    background: #1a1b26;
     margin-top: auto;
-    color: #ffffff
-}
+    color: #c0caf5;
+  }
+  

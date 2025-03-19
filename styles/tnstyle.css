@@ -1,3 +1,8 @@
+:root {
+    --link-color: #66ccff; /* light blue */
+    --link-hover-color: #99ddff; /* lighter blue */
+  }
+
 /* General Styling */
 body {
     font-family: Courier, monospace;
@@ -37,14 +42,15 @@ nav ul li {
     margin: 0 15px;
 }
 
+/* use css variables for nav links */
 nav ul li a {
-    color: #ffffff; /* Light text color */
+    color: var(--link-color);
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #292e42; /* Pinkish color on hover */
+    color: var(--link-hover-color);
 }
 
 /* Sections */

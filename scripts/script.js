@@ -12,11 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.style.borderRadius = "5px"
     toggle.style.cursor = "pointer"
     toggle.style.boxShadow = "2px 2px 10px rgba(0, 0, 0, 0.2)"
-    // use monospaced font
     toggle.style.fontFamily = "'courier new', courier, monospace"
+    toggle.style.zIndex = "1000"
     document.body.appendChild(toggle)
   
-    // create theme name disp
+    // create theme disp
     const themeNameDisplay = document.createElement("p")
     themeNameDisplay.style.position = "fixed"
     themeNameDisplay.style.top = "50px"
@@ -25,25 +25,33 @@ document.addEventListener("DOMContentLoaded", () => {
     themeNameDisplay.style.padding = "0"
     themeNameDisplay.style.color = "#002945"
     themeNameDisplay.style.fontFamily = "'courier new', courier, monospace"
+    themeNameDisplay.style.zIndex = "1000"
     document.body.appendChild(themeNameDisplay)
   
-    // define themes and names
+    // themes and names
     const themes = ["styles/style.css", "styles/tnstyle.css", "styles/tnstyle2.css"]
     const themeNames = ["light theme", "tn theme", "tn style 2"]
   
-    // get curr theme index or def to 0
+    // get curr index or def 0
     let currentThemeIndex = localStorage.getItem("themeIndex")
       ? parseInt(localStorage.getItem("themeIndex"), 10)
       : 0
   
     // set theme on load
-    document.getElementById("theme-style").setAttribute("href", themes[currentThemeIndex])
+    const linkElem = document.getElementById("theme-style")
+    if (linkElem) {
+      linkElem.setAttribute("href", themes[currentThemeIndex])
+    } else {
+      console.error("no 'theme-style' elem")
+    }
     themeNameDisplay.textContent = themeNames[currentThemeIndex]
   
     toggle.addEventListener("click", () => {
       // cycle theme
       currentThemeIndex = (currentThemeIndex + 1) % themes.length
-      document.getElementById("theme-style").setAttribute("href", themes[currentThemeIndex])
+      if (linkElem) {
+        linkElem.setAttribute("href", themes[currentThemeIndex])
+      }
       localStorage.setItem("themeIndex", currentThemeIndex)
       // update disp
       themeNameDisplay.textContent = themeNames[currentThemeIndex]

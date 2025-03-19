@@ -1,3 +1,8 @@
+:root {
+    --link-color: #66ccff; /* light blue */
+    --link-hover-color: #99ddff; /* lighter blue */
+  }
+
 /* General Styling */
 body {
     font-family: Courier, monospace;
