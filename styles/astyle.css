@@ -1,15 +1,16 @@
 :root {
     --link-color: #a9f6c1; /* light blue accent */
     --link-hover-color: #f3eef5; /* neon cyan */
-    --dgreen: #18291c;
+    --dgreen: #2a5e39;
     --sgreen: #5efc8d;
+    --txtclr: #0d0a0b;
   }
   
   /* General Styling */
   body {
     font-family: Courier, monospace;
     background-color: var(--dgreen); /* dark background */
-    color: #f3eff5; /* light text */
+    color: var(--txtblr); /* light text */
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -17,14 +18,14 @@
   
   /* Header */
   header {
-    background: var(--sgreen); /* slightly darker */
+    background: var(--dgreen); /* slightly darker */
     padding: 20px;
     text-align: center;
   }
   
   header h1 {
     margin: 0;
-    color: #f3eff5; /* light text */
+    color: var(--txtclr); /* light text */
   }
   
   /* Navigation */
@@ -46,7 +47,7 @@
   
   /* nav links using variables */
   nav ul li a {
-    color: var(--link-color);
+    color: var(--txtclr);
     text-decoration: none;
     font-weight: bold;
   }
@@ -70,6 +71,6 @@
     padding: 20px;
     background: var(--dgreen);
     margin-top: auto;
-    color: #c0caf5;
+    color: var(--txtclr);
   }
   
