@@ -1,12 +1,10 @@
 :root {
     --link-color: #a9f6c1; 
     --link-hover-color: #f3eef5; 
-    --dgreen: #2a5e39;
-    --sgreen: #3e8b56;
     --txtclr: #0d0a0b;
   }
   
-  /* General Styling */
+
   body {
     font-family: Courier, monospace;
     background-color: var(--dgreen); /* dark background */
@@ -16,7 +14,6 @@
     min-height: 100vh;
   }
   
-  /* Header */
   header {
     background: var(--dgreen); /* slightly darker */
     padding: 20px;
@@ -56,7 +53,6 @@
     color: var(--link-hover-color);
   }
   
-  /* Sections */
   section {
     max-width: 800px;
     margin: 40px auto;
@@ -65,7 +61,6 @@
     border-radius: 10px;
   }
   
-  /* Footer */
   footer {
     text-align: center;
     padding: 20px;
