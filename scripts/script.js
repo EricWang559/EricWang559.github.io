@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(toggle);
 
     // Define the available theme files
-    const themes = ["styles/style1.css", "styles/gtstyle.css", "styles/astyle.css"];
+    const themes = ["styles/gtstyle.css", "styles/style1.css", "styles/astyle.css"];
 
     // Retrieve current theme index from localStorage (if set) or default to 0.
     let currentThemeIndex = localStorage.getItem("themeIndex") ? parseInt(localStorage.getItem("themeIndex"), 10) : 0;
