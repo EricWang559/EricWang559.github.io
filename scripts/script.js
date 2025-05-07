@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const toggle = document.createElement("button");
+    /*const toggle = document.createElement("button");
     toggle.textContent = "Change Theme";
     toggle.style.position = "fixed";
     toggle.style.top = "10px";
@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(toggle);
     toggle.style.fontFamily = "'Courier New', Courier, monospace";
     toggle.style.fontSize = "12px";
-    document.body.appendChild(toggle);
+    document.body.appendChild(toggle);*/
 
     // Define the available theme files
-    const themes = ["styles/gtstyle.css", "styles/style1.css", "styles/astyle.css"];
+    const themes = ["styles/style1.css"];
 
     // Retrieve current theme index from localStorage (if set) or default to 0.
     let currentThemeIndex = localStorage.getItem("themeIndex") ? parseInt(localStorage.getItem("themeIndex"), 10) : 0;
