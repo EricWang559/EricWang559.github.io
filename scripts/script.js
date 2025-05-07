@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    /*const toggle = document.createElement("button");
+    const toggle = document.createElement("button");
     toggle.textContent = "Change Theme";
     toggle.style.position = "fixed";
     toggle.style.top = "10px";
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(toggle);
     toggle.style.fontFamily = "'Courier New', Courier, monospace";
     toggle.style.fontSize = "12px";
-    document.body.appendChild(toggle);*/
+    document.body.appendChild(toggle);
 
     // Define the available theme files
     const themes = ["styles/style1.css"];
